@@ -2,7 +2,7 @@
 
 NexPlayer has added a new MultiView feature in Android, iOS & HTML5 Player SDKs that allows broadcasters to display up to 5 simultaneous live streams to viewers with frame-accurate video synchronization within the same player frame (MultiStream Sync).
 
-NexPlayer MultiView provides these brands and broadcasters with an innovative way to broadcast live sporting events giving their viewers the power to choose from multiple angles that are fully synchronized within a seamless playback experience.
+NexPlayer MultiView provides an innovative way to broadcast live sporting events giving their viewers the power of choosing from multiple angles that are fully synchronized within a seamless playback experience.
 
 ## How does it work?
 
