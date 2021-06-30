@@ -178,24 +178,25 @@ To integrate NexPlayer™ multiview into your project you must complete the foll
 
 ```html
     <script src="https://nexplayer.nexplayersdk.com/multiview/nexplayer.js"></script>
-    <div class="alert alert-warning hints-alert">
-        <div class="hints-icon">
-            <i class="fa fa-warning"></i>
-        </div>
-        <div class="hints-container">
-            <p>The library above is a test version, the official version will be in the next release.</p>
-        </div>
-    </div>
-    <div class="alert alert-success hints-alert">
-        <div class="hints-icon">
-            <i class="fa fa-mortar-board"></i>
-        </div>
-        <div class="hints-container">
-            <p>Please note that the use of https to call our library is mandatory. </p>
-        </div>
-    </div>
-
 ```
+
+<div class="alert alert-warning hints-alert">
+    <div class="hints-icon">
+        <i class="fa fa-warning"></i>
+    </div>
+    <div class="hints-container">
+        <p>The library above is a test version, the official version will be in the next release.</p>
+    </div>
+</div>
+<div class="alert alert-success hints-alert">
+    <div class="hints-icon">
+        <i class="fa fa-mortar-board"></i>
+    </div>
+    <div class="hints-container">
+        <p>Please note that the use of https to call our library is mandatory. </p>
+    </div>
+</div>
+
 - A div that will contain the videos and the UI has to be declared:
 
 ```html
