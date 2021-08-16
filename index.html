@@ -3,30 +3,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>NexPlayer · Multiview Documentation</title>
+  <title>NexPlayer · MultiView Documentation</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/themes/vue.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="icon" href="https://i2.wp.com/html5.nexplayersdk.com/wp-content/uploads/2020/10/cropped-cropped-cropped-favicon3-1.png?fit=32%2C32&amp;ssl=1" sizes="32x32">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
   <link rel="icon" href="asset/favicon.ico">
   <link rel="stylesheet" href="style.css">
 </head>
 <style>
+  :root {
+    --sidebar-width : 25rem;
+  }
+  .markdown-section{max-width: 900px;}
+  .sidebar-nav a img, .sidebar nav a img {
+    margin-top: 10px;
+  }
+  .sidebar-nav>ul>li>ul>li>ul>li>a:before {
+    content:none;
+  }
+  .sidebar-nav>ul>li>ul>li>ul>li.active>a:before {
+    content:none;
+  }
 
-.markdown-section{max-width: 900px;}
+  details::before {
+    content: "\025B8";
+    float: left;
+  }
 
-:root{
-  --sidebar-background: rgb(116, 22, 22);    
-}
+  details[open]::before {
+      content:"\025BE";
+      float: left;
+  }
 
 </style>
 <body>
-  <div id="app">Please wait ... </div>
+  <div id="app">Please wait... </div>
   <script>
     window.$docsify = {
-      basePath: 'https://nexplayer.github.io/NexPlayer_Multiview',
+      basePath: 'http://localhost:3000',
       homepage: '/introduction.md',
       loadSidebar: 'sidebar.md',      
       themeColor: '#DC143C',
@@ -59,6 +74,8 @@
   <script src="//unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
   <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1.22.0/components/prism-java.js"></script>  
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.22.0/components/prism-swift.js"></script>  
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.22.0/components/prism-html.js"></script>  
   <script src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

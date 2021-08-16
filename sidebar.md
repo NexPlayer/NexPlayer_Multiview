@@ -1,9 +1,12 @@
 - [NexPlayer Multiview](/introduction.md) 
-- Integration Guide
+- [Integration Guide](integration-guide.md)
     - [iOS](/ios.md) 
     - [Android](/android.md) 
     - [HTML5](/html5.md) 
-- Setting up the streams
+- [Setting up the streams](setting-up-streams.md)
     - [Stream Requirements](/stream-requirements.md)    
     - [Using AWS Streams](/aws-nexplayer.md)    
-- [Request Demo](https://nexplayersdk.com/multiview-sdk/) 
+**Links**
+- [<img src="/assets/help.svg">Request Demo](https://nexplayersdk.com/multiview-sdk/)
+- [<img src="/assets/linkedin.svg">LinkedIn](https://www.linkedin.com/company/nexstreaming/)
+- [<img src="/assets/code.svg">NexPlayer SDKs](https://nexplayer.github.io/)
