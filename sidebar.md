@@ -7,6 +7,6 @@
     - [Stream Requirements](/stream-requirements.md)    
     - [Using AWS Streams](/aws-nexplayer.md)    
 **Links**
-- [<img src="/assets/help.svg">Request Demo](https://nexplayersdk.com/multiview-sdk/)
-- [<img src="/assets/linkedin.svg">LinkedIn](https://www.linkedin.com/company/nexstreaming/)
-- [<img src="/assets/code.svg">NexPlayer SDKs](https://nexplayer.github.io/)
+- [<img src="https://nexplayer.github.io/NexPlayer_Multiview/assets/help.svg">Request Demo](https://nexplayersdk.com/multiview-sdk/)
+- [<img src="https://nexplayer.github.io/NexPlayer_Multiview/assets/linkedin.svg">LinkedIn](https://www.linkedin.com/company/nexstreaming/)
+- [<img src="https://nexplayer.github.io/NexPlayer_Multiview/assets/code.svg">NexPlayer SDKs](https://nexplayer.github.io/)
