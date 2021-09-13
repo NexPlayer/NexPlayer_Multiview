@@ -114,51 +114,47 @@ Multi-view playback integrated in html5:
         var callBackWithPlayers = function (nexplayerInstance, videoElement) {
             };
 
-            multiView.additionalVideo({
-                key: "Your licence key",
+            multiView.addVideo({
+                key: "Your license key",
                 allowScreenPlayPause: false,
                 callbacksForPlayer: callBackWithPlayers,
                 debug: false,
                 div: document.getElementById('player'),
                 hideScreenPlay: false,
-                lowLatency: true,
                 showingFullUI: false,
                 src: 'Your stream URL',
             });
 
-            multiView.additionalVideo({
-                key: "Your licence key",
+            multiView.addVideo({
+                key: "Your license key",
                 allowScreenPlayPause: false,
                 callbacksForPlayer: callBackWithPlayers,
                 debug: false,
                 div: document.getElementById('player2'),
                 hideScreenPlay: false,
-                lowLatency: true,
                 showingFullUI: false,
                 src: 'Your stream URL',
             });
 
-            multiView.additionalVideo({
-                key: "Your licence key",
+            multiView.addVideo({
+                key: "Your license key",
                 div: document.getElementById('player3'),
                 callbacksForPlayer: callBackWithPlayers,
                 allowScreenPlayPause: false,
                 showingFullUI: false,
                 hideScreenPlay: false,
-                lowLatency: true,
                 debug: false,
                 src: 'Your stream URL',
             });
 
-            multiView.additionalVideo({
-                key: "Your licence key",
+            multiView.addVideo({
+                key: "Your license key",
                 div: document.getElementById('player4'),
                 callbacksForPlayer: callBackWithPlayers,
                 allowScreenPlayPause: false,
                 debug: false,
                 hideScreenPlay: false,
                 showingFullUI: false,
-                lowLatency: true,
                 src: 'Your stream URL',
             });
 
@@ -219,7 +215,7 @@ To integrate NexPlayer™ multiview into your project you must complete the foll
 
 ```
 
-- To create the players we will have to call multiview.additionalVideo() after callBackWithPlayers is created so that the players are initialized sequentially:
+- To create the players we will have to call multiview.addVideo() after callBackWithPlayers is created so that the players are initialized sequentially:
 
 ```js
 
@@ -229,51 +225,47 @@ To integrate NexPlayer™ multiview into your project you must complete the foll
 
     };
 
-    multiView.additionalVideo({
-        key: "Your licence key",
+    multiView.addVideo({
+        key: "Your license key",
         allowScreenPlayPause: false,
         callbacksForPlayer: callBackWithPlayers,
         debug: false,
         div: document.getElementById('player'),
         hideScreenPlay: false,
-        lowLatency: true,
         showingFullUI: false,
         src: 'Your stream URL',
     });
 
-    multiView.additionalVideo({
-        key: "Your licence key",
+    multiView.addVideo({
+        key: "Your license key",
         allowScreenPlayPause: false,
         callbacksForPlayer: callBackWithPlayers,
         debug: false,
         div: document.getElementById('player2'),
         hideScreenPlay: false,
-        lowLatency: true,
         showingFullUI: false,
         src: 'Your stream URL',
     });
 
-    multiView.additionalVideo({
-        key: "Your licence key",
+    multiView.addVideo({
+        key: "Your license key",
         div: document.getElementById('player3'),
         callbacksForPlayer: callBackWithPlayers,
         allowScreenPlayPause: false,
         showingFullUI: false,
         hideScreenPlay: false,
-        lowLatency: true,
         debug: false,
         src: 'Your stream URL',
     });
 
-    multiView.additionalVideo({
-        key: "Your licence key",
+    multiView.addVideo({
+        key: "Your license key",
         div: document.getElementById('player4'),
         callbacksForPlayer: callBackWithPlayers,
         allowScreenPlayPause: false,
         debug: false,
         hideScreenPlay: false,
         showingFullUI: false,
-        lowLatency: true,
         src: 'Your stream URL',
     });
 
@@ -284,16 +276,16 @@ To integrate NexPlayer™ multiview into your project you must complete the foll
 
 ## Synchronization
 
-To be able to use the synchronization we have to configure in the setup the ```lowLatency``` and ```dashSettings```.
+To be able to use the synchronization we have to configure in the setup the ```liveSettings```.
 
 ```javascript
 
-   multiView.additionalVideo({
-          key: "Your licence key",
-          div: document.getElementById('player4'),
+   multiView.addVideo({
+          key: "Your license key",
+          div: document.getElementById('id video'),
           callbacksForPlayer: callBackWithPlayers,
-          lowLatency: true,
-          dashSettings: {  // Optional: Allow modifying some dash properties like the following
+          liveSettings: {  
+            "lowLatency": true, // Optional, sets low latency on/off.
             "liveDelay": 20,    // Allow adjusting the live delay
             "liveCatchUpPlaybackRate": 0.5, // The speed that the player gets in order to keep the live delay
             "liveCatchUpMaxDrift": 3,   // The maximun delay before to make a seek live
