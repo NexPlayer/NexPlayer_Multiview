@@ -106,7 +106,7 @@ Multi-view playback integrated in html5:
                 <div id="player4" width="530" height="315"></div>
             </div>
         </div>
-	    <script src="https://nexplayer.nexplayersdk.com/multiview/nexplayer.js"></script>
+	    <script src="https://nexplayer.nexplayersdk.com/7.0.1/nexplayer.js"></script>
         <script>
             
         var multiView = new nexplayer.MultipleView();
@@ -173,7 +173,7 @@ To integrate NexPlayer™ multiview into your project you must complete the foll
 - The NexPlayer™ JavaScript library should be included in the HTML file:
 
 ```html
-    <script src="https://nexplayer.nexplayersdk.com/multiview/nexplayer.js"></script>
+    <script src="https://nexplayer.nexplayersdk.com/7.0.1/nexplayer.js"></script>
 ```
 
 <div class="alert alert-warning hints-alert">
@@ -284,13 +284,12 @@ To be able to use the synchronization we have to configure in the setup the ```l
           key: "Your license key",
           div: document.getElementById('id video'),
           callbacksForPlayer: callBackWithPlayers,
-          liveSettings: {  
-            "lowLatency": true, // Optional, sets low latency on/off.
-            "liveDelay": 20,    // Allow adjusting the live delay
-            "liveCatchUpPlaybackRate": 0.5, // The speed that the player gets in order to keep the live delay
-            "liveCatchUpMaxDrift": 3,   // The maximun delay before to make a seek live
-            "liveCatchupLatencyThreshold": 30,  // The threshold where the synchronization properties works
-          }
+          lowLatency: true,
+          liveSettings: { //Optional, requires low latency
+            liveDelay: 5, // Optional, seconds of delay.
+            maxDrift: 10, // Optional, the maximum delay before to make a seek live.
+            playbackRate: 0.5,   // Optional, the speed that the player gets in order to keep the live delay.
+        }, 
           src: 'Your stream URL',
       });
    
