@@ -173,17 +173,9 @@ To integrate NexPlayer™ multiview into your project you must complete the foll
 - The NexPlayer™ JavaScript library should be included in the HTML file:
 
 ```html
-    <script src="https://nexplayer.nexplayersdk.com/7.0.1/nexplayer.js"></script>
+    <script src="https://nexplayer.nexplayersdk.com/7.1.2/nexplayer.js"></script>
 ```
 
-<div class="alert alert-warning hints-alert">
-    <div class="hints-icon">
-        <i class="fa fa-warning"></i>
-    </div>
-    <div class="hints-container">
-        <p>The library above is a test version, the official version will be in the next release.</p>
-    </div>
-</div>
 <div class="alert alert-success hints-alert">
     <div class="hints-icon">
         <i class="fa fa-mortar-board"></i>
