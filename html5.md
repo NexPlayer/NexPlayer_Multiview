@@ -278,9 +278,11 @@ To be able to use the synchronization we have to configure in the setup the ```l
           callbacksForPlayer: callBackWithPlayers,
           lowLatency: true,
           liveSettings: { //Optional, requires low latency
-            liveDelay: 5, // Optional, seconds of delay.
-            maxDrift: 10, // Optional, the maximum delay before to make a seek live.
-            playbackRate: 0.5,   // Optional, the speed that the player gets in order to keep the live delay.
+            lowLatency: true, // Optional, sets low latency on/off.
+            liveDelay: 20,    // Allow adjusting the live delay
+            liveCatchUpPlaybackRate: 0.5, // The speed that the player gets in order to keep the live delay
+            liveCatchUpMaxDrift: 3,   // The maximun delay before to make a seek live
+            liveCatchupLatencyThreshold: 30,  // The threshold where the synchronization properties works
         }, 
           src: 'Your stream URL',
       });
