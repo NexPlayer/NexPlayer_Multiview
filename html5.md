@@ -106,7 +106,7 @@ Multi-view playback integrated in html5:
                 <div id="player4" width="530" height="315"></div>
             </div>
         </div>
-	    <script src="https://nexplayer.nexplayersdk.com/7.0.1/nexplayer.js"></script>
+	    <script src="Ask for the latest NexPlayer SDK version"></script>
         <script>
             
         var multiView = new nexplayer.MultipleView();
@@ -114,7 +114,7 @@ Multi-view playback integrated in html5:
         var callBackWithPlayers = function (nexplayerInstance, videoElement) {
             };
 
-            multiView.addVideo({
+            multiView.additionalVideo({
                 key: "Your license key",
                 allowScreenPlayPause: false,
                 callbacksForPlayer: callBackWithPlayers,
@@ -125,7 +125,7 @@ Multi-view playback integrated in html5:
                 src: 'Your stream URL',
             });
 
-            multiView.addVideo({
+            multiView.additionalVideo({
                 key: "Your license key",
                 allowScreenPlayPause: false,
                 callbacksForPlayer: callBackWithPlayers,
@@ -136,7 +136,7 @@ Multi-view playback integrated in html5:
                 src: 'Your stream URL',
             });
 
-            multiView.addVideo({
+            multiView.additionalVideo({
                 key: "Your license key",
                 div: document.getElementById('player3'),
                 callbacksForPlayer: callBackWithPlayers,
@@ -147,7 +147,7 @@ Multi-view playback integrated in html5:
                 src: 'Your stream URL',
             });
 
-            multiView.addVideo({
+            multiView.additionalVideo({
                 key: "Your license key",
                 div: document.getElementById('player4'),
                 callbacksForPlayer: callBackWithPlayers,
@@ -173,7 +173,7 @@ To integrate NexPlayer™ multiview into your project you must complete the foll
 - The NexPlayer™ JavaScript library should be included in the HTML file:
 
 ```html
-<script src="https://nexplayer.nexplayersdk.com/7.1.2/nexplayer.js"></script>
+<script src="Ask for the latest NexPlayer SDK version"></script>
 ```
 
 <div class="alert alert-success hints-alert">
@@ -217,7 +217,7 @@ To integrate NexPlayer™ multiview into your project you must complete the foll
 
     };
 
-    multiView.addVideo({
+    multiView.additionalVideo({
         key: "Your license key",
         allowScreenPlayPause: false,
         callbacksForPlayer: callBackWithPlayers,
@@ -228,7 +228,7 @@ To integrate NexPlayer™ multiview into your project you must complete the foll
         src: 'Your stream URL',
     });
 
-    multiView.addVideo({
+    multiView.additionalVideo({
         key: "Your license key",
         allowScreenPlayPause: false,
         callbacksForPlayer: callBackWithPlayers,
@@ -239,7 +239,7 @@ To integrate NexPlayer™ multiview into your project you must complete the foll
         src: 'Your stream URL',
     });
 
-    multiView.addVideo({
+    multiView.additionalVideo({
         key: "Your license key",
         div: document.getElementById('player3'),
         callbacksForPlayer: callBackWithPlayers,
@@ -250,7 +250,7 @@ To integrate NexPlayer™ multiview into your project you must complete the foll
         src: 'Your stream URL',
     });
 
-    multiView.addVideo({
+    multiView.additionalVideo({
         key: "Your license key",
         div: document.getElementById('player4'),
         callbacksForPlayer: callBackWithPlayers,
@@ -264,7 +264,7 @@ To integrate NexPlayer™ multiview into your project you must complete the foll
     multiView.Initialize();
 
 ```
-- There are some functions available to use, consult the <a href="#/API?id=multiview" target = "_blank" >api</a>
+- There are some functions available to use, consult the <a href="https://nexplayer.github.io/NexPlayer_HTML5_Documentation/#/API?id=multiview" target = "_blank" >api</a>
 
 ## Synchronization
 
@@ -272,7 +272,7 @@ To be able to use the synchronization we have to configure in the setup the ```l
 
 ```javascript
 
-   multiView.addVideo({
+   multiView.additionalVideo({
           key: "Your license key",
           div: document.getElementById('id video'),
           callbacksForPlayer: callBackWithPlayers,
